@@ -1,7 +1,8 @@
-def wsgi_application(environ,start_response):
+def app(environ, start_response):
+	#BUSINNES, MAT EGO, LOGIC, EEE
+	bodypozitiv = '\n'.join(environ['QUERY_STRING'].split('&'))
 	status = '200 OK'
 	headers = [ ('Content Type', 'text/plain') ]
-	body = 'a=1 /n ...';
 	start response(status, headers)
-	return [ body ]
+	return [ bodypozitiv ]
 	
