@@ -3,6 +3,6 @@ def app(environ, start_response):
 	bodypozitiv = '\n'.join(environ['QUERY_STRING'].split('&'))
 	status = '200 OK'
 	headers = [ ('Content Type', 'text/plain') ]
-	start response(status, headers)
+	start_response(status, headers)
 	return iter([ bodypozitiv ])
 	
