@@ -4,5 +4,5 @@ def app(environ, start_response):
 	status = '200 OK'
 	headers = [ ('Content Type', 'text/plain') ]
 	start response(status, headers)
-	return [ bodypozitiv ]
+	return iter([ bodypozitiv ])
 	
