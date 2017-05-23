@@ -1,3 +1,4 @@
+from re import sub
 def app(environ, start_response):
 	#BUSINNES, MAT EGO, LOGIC, EEE
    	output = sub('&', '\n', environ.get('QUERY_STRING', ''))
